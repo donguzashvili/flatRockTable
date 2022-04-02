@@ -1,0 +1,161 @@
+.tableWrapper {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+      tr {
+        th {
+          padding: 10px 10px 10px 5px;
+          &:not(:first-child) {
+            border-bottom: 1px solid var(--borderColor);
+          }
+          &:nth-child(n + 3) {
+            div {
+              text-align: center;
+            }
+          }
+          div {
+            text-align: start;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 10px 10px 10px 0;
+          .tdWrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .vpnKey {
+              width: 48px;
+              height: 32px;
+              border-radius: 30px;
+              background-color: var(--vpnKeyColor);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              .a {
+                fill: var(--vpnKeyColor);
+              }
+            }
+          }
+          .icnWrapper {
+            svg {
+              cursor: pointer;
+            }
+          }
+          &:not(:first-child) {
+            border-bottom: 1px solid var(--borderColor);
+          }
+          .adminStatus {
+            display: flex;
+          }
+          div {
+            p {
+              margin: 0;
+              font-family: var(--fontBold);
+              font-weight: bold;
+              &:last-child {
+                font-size: 16px;
+                font-family: var(--font);
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+    tfoot {
+      tr {
+        td {
+          padding: 50px 0 0;
+          .dropDownWrapper {
+            display: flex;
+            p {
+              margin: 0;
+            }
+            .dropDown {
+              padding: 0 5px;
+              position: relative;
+              button {
+                border: none;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                svg {
+                  transition: all 0.3s ease-in-out;
+                }
+                .rotateArrow {
+                  transform: rotate(180deg);
+                }
+                p {
+                  font-weight: bold;
+                  padding: 0 2px;
+                  min-width: 20px;
+                }
+              }
+              .showOptions {
+                visibility: visible !important;
+              }
+              .options {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 20px;
+                visibility: hidden;
+
+                span {
+                  text-align: center;
+                  cursor: pointer;
+                  border-bottom: 2px solid var(--borderColor);
+                  &:hover {
+                    transition: all 0.3s ease-in-out;
+                    border-bottom: 2px solid orange;
+                  }
+                }
+              }
+            }
+          }
+          .paginateWrapper {
+            display: flex;
+            justify-content: flex-end;
+            .paginate {
+              .activeBtn {
+                background-color: var(--paginationBtn);
+              }
+              button {
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                border-radius: 4px;
+                &:not(:last-child):not(:first-child) {
+                  width: 32px;
+                  height: 32px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .inactive {
+      td {
+        color: var(--inactive);
+        .vpnKey {
+          background-color: transparent !important;
+          .a {
+            fill: transparent !important;
+          }
+          .b {
+            fill: var(--inactive);
+          }
+        }
+      }
+    }
+  }
+}

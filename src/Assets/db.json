@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Danniel",
+      "last_name": "Bichman",
+      "mail": "danniel.bichman@testtask.com",
+      "role": "Admin",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Margarette",
+      "last_name": "Jones",
+      "mail": "margarette.jones@testtask.com",
+      "role": "User",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Bethany",
+      "last_name": "Doe",
+      "mail": "bethany.doe@testtask.com",
+      "role": "User",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "Samuel",
+      "last_name": "Jackson",
+      "mail": "samuel.jackson@testtask.com",
+      "role": "User",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "Persival",
+      "last_name": "Blinn",
+      "mail": "persival.blinn@testtask.com",
+      "role": "Admin",
+      "status": "inactive"
+    },
+    {
+      "id": 6,
+      "name": "Shota",
+      "last_name": "Donguzashvili",
+      "mail": "shota.nope@gmail.com",
+      "role": "User",
+      "status": "active"
+    }
+  ]
+}

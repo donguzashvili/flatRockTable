@@ -1,0 +1,22 @@
+header {
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 0 0 4px;
+  padding: 10px;
+  height: 211px;
+}
+
+.headerWrapper {
+  position: relative;
+  margin: 38px 17px 232px 160px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.CustomIcon {
+  width: 72px;
+  height: 72px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -114px;
+  left: -24px;
+}
