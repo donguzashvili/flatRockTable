@@ -23,7 +23,7 @@ export function SelectComponent({ placeholder, value, setValue, dataStatus }) {
     <label htmlFor="role" onClick={(e) => activateInput(e)} className="dropDown">
       <p className={value ? `activeInput ${status}` : ''}>{placeholder}</p>
       <div className="dropDownOptionsWrapper">
-        <input placeholder={placeholder} value={value} type="text" disabled />
+        <input placeholder={placeholder} value={value ? value : ''} type="text" disabled />
         <div style={dataStatus === 'Inactive' ? { display: 'none' } : null} className="dropdownOptions">
           <span onClick={() => setValue('Admin')}>Admin</span>
           <span onClick={() => setValue('User')}>User</span>
