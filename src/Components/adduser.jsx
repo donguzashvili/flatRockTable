@@ -72,7 +72,7 @@ export default function AddUser({ closeWindow, addUser }) {
           <div className="roleDropDown">
             <RoleIcn />
 
-            <SelectComponent placeholder="* Role" setValue={setRole} defaultValue={role} />
+            <SelectComponent placeholder="* Role" setValue={setRole} value={role} />
           </div>
           {validate === false ? (
             <div className="send validateFalse">
