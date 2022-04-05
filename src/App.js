@@ -66,13 +66,12 @@ function App() {
   //update user from edit user
   const updateUser = (obj) => {
     let tempData = [...appData];
-    tempData.find((el) => {
+    tempData.forEach((el) => {
       if (el.id === obj.id) {
         el.name = obj.name;
         el.last_name = obj.last_name;
         el.role = obj.role;
       }
-      return el;
     });
     setAppData(tempData);
     navigate('/table/1');
