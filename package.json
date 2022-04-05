@@ -45,12 +45,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donguzashvili/flatRockTable.git"
+    "url": "https://github.com/donguzashvili/flatRockTable.git"
   },
   "author": "Shota Donguzashvili",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/donguzashvili/flatRockTable/issues"
   },
-  "homepage": "https://github.com/donguzashvili/flatRockTable"
+  "homepage": "https://donguzashvili.github.io/flatRockTable"
 }
