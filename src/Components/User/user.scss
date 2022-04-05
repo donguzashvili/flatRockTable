@@ -1,0 +1,270 @@
+.userContentWrapper {
+  .userSections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .PermissionsSection {
+      .permissionsContainer {
+        .permissionGroups {
+          .statusGroups {
+            border-bottom: 1px solid var(--borderColor);
+
+            .statusGroupHeader {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0 0 20px;
+              position: relative;
+              div {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .keyDownArrow {
+                  position: absolute;
+                  left: -25px;
+                }
+              }
+            }
+            .statusGroupBody {
+              height: 0;
+              visibility: hidden;
+              transition: all 0.3s ease-in-out;
+              overflow: hidden;
+              .Active_element {
+                div {
+                  .statusCircle {
+                    background-color: var(--activeStatusColor);
+                  }
+                  p {
+                    font: normal normal 600 16px/21px Segoe UI;
+                  }
+                }
+              }
+              .Inactive_element {
+                div {
+                  .statusCircle {
+                    background-color: red;
+                  }
+                  p {
+                    font: normal normal 300 16px/21px Segoe UI;
+                  }
+                }
+              }
+              .statusElement {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                  margin: 0 0 11px 0;
+                }
+                div {
+                  display: flex;
+                  align-items: center;
+                  .statusCircle {
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    margin: 0 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .superAdmin {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid var(--borderColor);
+          padding: 0 0 20px;
+          p {
+            font: normal normal bold 16px/21px Segoe UI;
+          }
+        }
+        .permissionsheader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h3 {
+            font: normal normal 600 36px/48px Segoe UI;
+          }
+          p {
+            font: normal normal 300 16px/21px Segoe UI;
+          }
+        }
+      }
+    }
+    .detailsSection {
+      display: flex;
+      justify-content: center;
+      .detailsContainer {
+        width: 306px;
+        .saveBtn {
+          margin: 78px 0 0;
+          border: none;
+          background-color: transparent;
+          svg {
+            .a {
+              fill: var(--activeStatusColor);
+            }
+            .text {
+              fill: var(--white);
+            }
+          }
+        }
+        .labelWrappers {
+          margin: 30px 0;
+          width: 100%;
+          label {
+            input {
+              font: normal normal 300 16px/21px Segoe UI;
+            }
+          }
+          .activeInput {
+            font: normal normal 600 12px/16px Segoe UI;
+          }
+        }
+        .roleDropDown {
+          width: 100%;
+
+          .dropDown {
+            display: flex;
+            width: 100%;
+            .dropDownOptionsWrapper {
+              width: 100%;
+              .dropdownOptions {
+                top: 32px;
+              }
+            }
+          }
+          p {
+            width: 100%;
+          }
+          .dropDownOptionsWrapper {
+            position: relative;
+            input {
+              font: normal normal 300 16px/21px Segoe UI;
+            }
+            svg {
+              position: absolute;
+              right: 0;
+              top: 10px;
+            }
+          }
+        }
+        h3 {
+          font: normal normal 600 36px/48px Segoe UI;
+        }
+        .userStatusSection {
+          display: flex;
+          align-items: center;
+          position: relative;
+          div {
+            display: flex;
+            align-items: center;
+          }
+          p {
+            font: normal normal 300 16px/21px Segoe UI;
+            span {
+              font: normal normal bold 16px/21px Segoe UI;
+            }
+          }
+          svg {
+            position: absolute;
+            left: -50px;
+          }
+        }
+      }
+    }
+    .avatarSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .resend {
+        margin: 50px 0 0;
+        .a {
+          fill: var(--vpnKeyColor) !important;
+        }
+        .text {
+          font: normal normal 600 16px/21px Segoe UI;
+        }
+      }
+      .persInfo {
+        text-align: center;
+        p {
+          margin: 0;
+          font: normal normal 600 48px/48px Segoe UI;
+        }
+        span {
+          display: block;
+          font: normal normal 300 16px/21px Segoe UI;
+          margin: 10px 0;
+        }
+      }
+      .uploadText {
+        font: normal normal 300 14px/19px Segoe UI;
+        text-transform: uppercase;
+        color: var(--lightGray);
+      }
+      .avatarContainer {
+        position: relative;
+        span {
+          width: 77px;
+          height: 51px;
+          border-radius: 30px;
+          background-color: var(--vpnKeyColor);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 20px;
+          right: 10px;
+          svg {
+            height: 24px !important;
+            width: 24px !important;
+            .a {
+              fill: none !important;
+            }
+          }
+        }
+
+        &:first-child {
+          svg {
+            width: 233px;
+            height: 233px;
+            .a {
+              fill: #666;
+            }
+          }
+        }
+
+        &:last-child {
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+.Active_status {
+  .a {
+    fill: var(--activeStatusColor);
+    opacity: 0.38;
+  }
+  .b {
+    fill: var(--activeStatusColor);
+  }
+}
+
+.Inactive_status {
+  .a {
+    fill: red;
+    opacity: 0.38;
+  }
+  .b {
+    fill: red;
+  }
+}
+.showOptions {
+  visibility: visible !important;
+  height: unset !important;
+}

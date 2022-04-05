@@ -6,7 +6,7 @@
       "last_name": "Bichman",
       "mail": "danniel.bichman@testtask.com",
       "role": "Admin",
-      "status": "active"
+      "status": "Active"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "last_name": "Jones",
       "mail": "margarette.jones@testtask.com",
       "role": "User",
-      "status": "active"
+      "status": "Active"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "last_name": "Doe",
       "mail": "bethany.doe@testtask.com",
       "role": "User",
-      "status": "active"
+      "status": "Active"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "last_name": "Jackson",
       "mail": "samuel.jackson@testtask.com",
       "role": "User",
-      "status": "active"
+      "status": "Active"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "last_name": "Blinn",
       "mail": "persival.blinn@testtask.com",
       "role": "Admin",
-      "status": "inactive"
+      "status": "Inactive"
     },
     {
       "id": 6,
@@ -46,7 +46,201 @@
       "last_name": "Donguzashvili",
       "mail": "shota.nope@gmail.com",
       "role": "User",
-      "status": "active"
+      "status": "Active"
     }
-  ]
+  ],
+  "permission": {
+    "0": [
+      {
+        "status": false,
+        "group": [
+          { "permission_1": true },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": true },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": true },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      }
+    ],
+    "1": [
+      {
+        "status": false,
+        "group": [
+          { "permission_1": true },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": true },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": true },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "status": false,
+        "group": [
+          { "permission_1": true },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": true },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": true },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "status": false,
+        "group": [
+          { "permission_1": true },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": true },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": true },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "status": false,
+        "group": [
+          { "permission_1": true },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": true },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": true },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "status": false,
+        "group": [
+          { "permission_1": true },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": true },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": false },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      },
+      {
+        "status": false,
+        "group": [
+          { "permission_1": false },
+          { "permission_2": true },
+          { "permission_3": true },
+          { "permission_4": false },
+          { "permission_5": true }
+        ]
+      }
+    ]
+  }
 }

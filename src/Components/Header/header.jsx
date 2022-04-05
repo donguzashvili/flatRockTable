@@ -1,23 +1,28 @@
-import { useParams } from "react-router-dom";
-import Icon from "./Icon";
+import { ReactComponent as Search } from '../../Assets/img/search-24px (2).svg';
+import Icon from './Icon';
 
-import "./header.css";
+import './header.css';
 
-export default function Header() {
-  const { page } = useParams();
+export default function Header({ searchData, addData }) {
+  const url = window.location.href;
 
   return (
     <header>
       <div className="headerWrapper">
         <div>
-          <h1>{!page ? "Project Access" : "User Setup"}</h1>
+          <h1>{url?.includes('table') ? 'Project Access' : 'User Setup'}</h1>
         </div>
-        {page === "table" ? (
-          <div>
-            <input type="text" />
+
+        {url?.includes('table') ? (
+          <div className="tableSearch">
+            <label htmlFor="">
+              <input type="text" placeholder="Type to filter the table" onInput={searchData} />
+              <Search />
+            </label>
           </div>
         ) : null}
-        <Icon />
+
+        <Icon addData={addData} />
       </div>
     </header>
   );

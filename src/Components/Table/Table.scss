@@ -1,4 +1,6 @@
 .tableWrapper {
+  position: relative;
+
   table {
     border-collapse: collapse;
     width: 100%;
@@ -6,16 +8,38 @@
       tr {
         th {
           padding: 10px 10px 10px 5px;
+          .sortData {
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+          &:not(:first-child):not(:last-child) {
+            cursor: pointer;
+          }
           &:not(:first-child) {
             border-bottom: 1px solid var(--borderColor);
+            div {
+              display: flex;
+              align-items: center;
+              svg {
+                margin: 0 10px;
+              }
+            }
           }
           &:nth-child(n + 3) {
             div {
-              text-align: center;
+              justify-content: center;
+              color: var(--inactive);
+              svg {
+                fill: var(--inactive);
+              }
             }
           }
           div {
             text-align: start;
+            svg {
+              transition: all 0.3s ease-in-out;
+            }
           }
         }
       }
@@ -26,8 +50,39 @@
           padding: 10px 10px 10px 0;
           .tdWrapper {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            .centerWrapper {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              p {
+                font: normal normal 600 16px/21px Segoe UI;
+              }
+              .vpnKey ~ p {
+                margin: 0 20px;
+              }
+            }
+            .Active_slider {
+              .a {
+                fill: #44a0d3;
+
+                opacity: 0.38;
+              }
+              .b {
+                fill: #44a0d3;
+              }
+            }
+            .Inactive_slider {
+              .a {
+                fill: red;
+
+                opacity: 0.38;
+              }
+              .b {
+                fill: red;
+              }
+            }
             .vpnKey {
               width: 48px;
               height: 32px;
@@ -43,8 +98,13 @@
             }
           }
           .icnWrapper {
+            justify-content: center;
             svg {
+              margin: 0 10px;
               cursor: pointer;
+              width: 22.934px !important;
+              height: 17.15px !important;
+              fill: var(--inactive);
             }
           }
           &:not(:first-child) {
@@ -143,16 +203,18 @@
       }
     }
 
-    .inactive {
+    .Inactive {
       td {
         color: var(--inactive);
-        .vpnKey {
-          background-color: transparent !important;
-          .a {
-            fill: transparent !important;
-          }
-          .b {
-            fill: var(--inactive);
+        .tdWrapper {
+          .vpnKey {
+            background-color: transparent !important;
+            .a {
+              fill: transparent !important;
+            }
+            .b {
+              fill: var(--inactive);
+            }
           }
         }
       }

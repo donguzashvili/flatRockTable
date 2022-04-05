@@ -1,0 +1,90 @@
+.warn {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-color: var(--backgroundBlur);
+  .warnWrapper {
+    background-color: var(--white);
+    padding: 50px 123px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: black 2px 2px 12px 0px;
+    position: relative;
+    width: 646px;
+    height: 358px;
+    .deleteBtn {
+      cursor: pointer;
+      .a {
+        fill: var(--deleteBtn);
+      }
+      .text {
+        fill: var(--white);
+        font: normal normal 600 16px/21px Segoe UI;
+      }
+    }
+    h3 {
+      font: normal normal 600 36px/48px Segoe UI;
+      margin: 0;
+    }
+    .deleteUserContent {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      margin-bottom: 40px;
+      svg {
+        position: absolute;
+        left: -45px;
+        top: 45px;
+        .a {
+          fill: transparent;
+        }
+      }
+      .userNameContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid var(--paginationBtn);
+        padding: 30px 0 20px;
+        .user {
+          font: normal normal 300 16px/21px Segoe UI;
+        }
+        .userStatus {
+          color: var(--activeStatusColor);
+          font: normal normal bold 16px/21px Segoe UI;
+        }
+      }
+    }
+    .closeIcn {
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      .a {
+        fill: transparent;
+        cursor: pointer;
+      }
+    }
+    div {
+      button {
+        margin: 0 10px;
+        cursor: pointer;
+        background-color: transparent;
+        border-bottom: 3px solid transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          border-bottom: 3px solid orange;
+        }
+      }
+    }
+  }
+}

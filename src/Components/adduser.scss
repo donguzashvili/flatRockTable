@@ -1,0 +1,160 @@
+.addUser {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: var(--backgroundBlur);
+  z-index: 2;
+
+  .addUserWrapper {
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 4px;
+    position: relative;
+    width: 646px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    form {
+      width: 100%;
+      padding: 0 40px;
+
+      .validateFalse {
+        p {
+          color: var(--red);
+        }
+      }
+      .validateTrue {
+        svg {
+          .a {
+            fill: #50a0d3 !important;
+          }
+          .text {
+            fill: var(--white) !important;
+          }
+        }
+        p {
+          color: var(--green);
+        }
+      }
+      .send {
+        padding: 20px;
+        justify-content: space-between;
+        button {
+          border: none;
+          background-color: transparent;
+          svg {
+            position: unset;
+            cursor: pointer;
+            .a {
+              fill: var(--inactive);
+            }
+            .text {
+              font: normal normal 600 16px/21px Segoe UI;
+            }
+          }
+        }
+
+        p {
+          cursor: default;
+          font: italic normal 300 16px/21px Segoe UI;
+        }
+      }
+      h2 {
+        white-space: nowrap;
+        font-size: 36px;
+        margin: 20px 25px 40px;
+      }
+      .roleDropDown {
+        width: 55%;
+        .b {
+          fill: black;
+        }
+        .openOptions {
+          .dropdownOptions {
+            height: 85px !important;
+          }
+        }
+        .dropDown {
+          cursor: pointer;
+          input {
+            cursor: pointer;
+          }
+        }
+        label {
+          div {
+            padding: 0;
+            position: relative;
+
+            .dropdownOptions {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              top: 26px;
+              border: 1px solid var(--paginationBtn);
+              height: 0;
+              overflow: hidden;
+              transition: all 0.3s ease-in-out;
+              background-color: var(--white);
+              z-index: 5;
+              cursor: pointer;
+              span {
+                padding: 10px;
+                border-bottom: 1px solid var(--paginationBtn);
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  background-color: orange;
+                  color: var(--white);
+                }
+              }
+            }
+            input {
+              &:disabled {
+                background-color: transparent;
+              }
+            }
+            svg {
+              right: 5px;
+              left: unset;
+              top: unset;
+            }
+          }
+        }
+      }
+      div {
+        display: flex;
+        align-items: center;
+        padding: 25px 20px;
+        margin: 10px 0;
+        position: relative;
+        width: 100%;
+        svg {
+          position: absolute;
+          left: -20px;
+          top: 25px;
+          .a {
+            fill: transparent;
+          }
+        }
+      }
+    }
+
+    .closeIcn {
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      cursor: pointer;
+      .a {
+        fill: transparent;
+      }
+    }
+  }
+}

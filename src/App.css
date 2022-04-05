@@ -8,6 +8,9 @@ html {
 * {
   box-sizing: border-box;
 }
+body {
+  overflow: hidden;
+}
 
 @font-face {
   font-family: var(--fontBold);
@@ -17,6 +20,10 @@ html {
   font-family: var(--font);
   src: url("./Assets/font/Segoe\ UI.woff");
 }
+@font-face {
+  font-family: var(--fontItalic);
+  src: url("./Assets/font/Segoe\ UI\ Bold\ Italic.woff");
+}
 
 :root {
   --contentColor: #f3f3f3;
@@ -24,8 +31,18 @@ html {
   --paginationBtn: #c6c6c6;
   --inactive: #c6c6c6;
   --vpnKeyColor: #7e7ef1;
+  --addBtnColor: #305eca;
+  --activeColor: #33a3dc;
+  --lightGray: #b0acac;
+  --activeStatusColor: #44a0d3;
+  --green: #44d36a;
+  --backgroundBlur: rgba(0, 0, 0, 0.5);
+  --red: #f89797;
+  --deleteBtn: #ed9695;
+  --white: #ffffff;
   --fontBold: "Segoe UI, Semibold";
   --font: "Segoe UI, Light";
+  --fontItalic: "Segoe UI, Light Italic";
 }
 #root {
   height: 100%;
@@ -34,10 +51,32 @@ html {
 .App {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 section {
   background-color: var(--contentColor);
   height: 100%;
   width: 100%;
   padding: 38px 127px 0 160px;
+}
+.Inactive {
+  color: var(--inactive) !important;
+}
+.Inactive_hidden {
+  visibility: hidden;
+}
+.Inactive_btn {
+  visibility: hidden;
+}
+.Inactive_Circle {
+  opacity: 38%;
+}
+.Inactive_arrow {
+  fill: var(--inactive);
+}
+.Inactive_slider .a {
+  opacity: 0.1 !important;
+}
+.Inactive_slider .b {
+  opacity: 0.25;
 }
